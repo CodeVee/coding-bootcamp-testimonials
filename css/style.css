@@ -29,3 +29,33 @@ html {
     max-width: var(--max-size);
     margin: 0 auto;
 }
+
+main#main {
+    height: 100vh;
+    position: relative;
+}
+
+#main > img {
+    position: absolute;
+}
+
+#quotes {
+    top: 5rem;
+    left: 7rem;
+}
+
+#pattern {
+    width: 16rem;
+    top: 2rem;
+    right: 4rem;
+}
+
+#curve {
+    bottom: 0;
+    width: 15rem;
+}
+
+.wrapper {
+    z-index: 1;
+    position: relative;
+}
