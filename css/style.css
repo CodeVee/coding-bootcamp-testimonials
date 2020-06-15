@@ -202,11 +202,21 @@ main#main {
     right: 0;
     margin: 6vh auto;
   }
+
+  .toggle {
+    width: 22vw;
+    right: 40vw;
+    top: 45vh;
+  }
 }
 
 @media screen and (max-width: 400px) and (min-height: 800px) {
   .frame {
     height: 34vh;
     margin: 5vh auto;
+  }
+
+  .toggle {
+      top: 37vh;
   }
 }
