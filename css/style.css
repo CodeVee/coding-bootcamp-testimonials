@@ -221,7 +221,7 @@ main#main {
   }
 }
 
-@media screen and (max-width: 400px) and (min-height: 800px) {
+@media screen and (max-width: 500px) and (min-height: 750px) {
   .frame {
     height: 34vh;
     margin: 5vh auto;
