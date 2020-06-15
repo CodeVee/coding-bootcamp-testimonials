@@ -23,14 +23,6 @@ button {
   cursor: pointer;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 .container {
   max-width: var(--max-size);
   margin: 0 auto;
@@ -120,6 +112,24 @@ main#main {
   right: 14.3rem;
   top: 15.3rem;
   z-index: 2;
+}
+
+.toggle-left:active,
+.toggle-right:active {
+  transform: scale(0.8);
+}
+
+.toggle-left:focus,
+.toggle-right:focus {
+  outline: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .slide {
@@ -217,6 +227,6 @@ main#main {
   }
 
   .toggle {
-      top: 37vh;
+    top: 37vh;
   }
 }
