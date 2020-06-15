@@ -69,7 +69,7 @@ main#main {
   width: 29.93rem;
   height: 12.3rem;
   margin: 3.5rem auto;
-  display: grid;
+  display: none;
   grid-template-columns: 1.95fr 1fr;
 }
 
@@ -78,6 +78,7 @@ main#main {
   z-index: 3;
   position: relative;
   margin-top: 3.5rem;
+  color: var(--dark-blue);
 }
 
 .text {
@@ -122,15 +123,15 @@ main#main {
 }
 
 .slide {
-  -webkit-animation-name: fade;
+  -webkit-animation-name: slide;
   -webkit-animation-duration: 1.5s;
   animation-name: slide;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes slide {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
@@ -139,7 +140,7 @@ main#main {
 
 @keyframes slide {
   from {
-    opacity: 0.4;
+    opacity: 0.2;
   }
   to {
     opacity: 1;
