@@ -148,40 +148,65 @@ main#main {
 }
 
 @media screen and (max-width: 475px) {
-    main#main {
-        min-height: 97vh;
-        position: relative;
-        display: flex;
-        overflow: hidden;
-      }
-      
-      #main > img {
-        position: absolute;
-      }
-      
-      #quotes {
-        top: 100vw;
-        left: 42.5vw;
-        width: 15vw;
-      }
-      
-      #pattern {
-        width: 96vw;
-        top: .2rem;
-        right: 2vw;
-      }
-      
-      #curve {
-        width: 70vw;
-      }
-      
-      .wrapper {
-        z-index: 1;
-        position: relative;
-        width: 29.93rem;
-        height: 12.3rem;
-        margin: 3.5rem auto;
-        display: none;
-        grid-template-columns: 1.95fr 1fr;
-      }
+  main#main {
+    min-height: 97vh;
+    overflow: hidden;
+  }
+
+  #quotes {
+    top: 55vh;
+    left: 42.5vw;
+    width: 15vw;
+  }
+
+  #pattern {
+    width: 96vw;
+    top: 0.2rem;
+    right: 2vw;
+  }
+
+  #curve {
+    width: 70vw;
+  }
+
+  .wrapper {
+    width: 100vw;
+    height: inherit;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .description {
+    order: 1;
+  }
+
+  .inner-wrapper {
+    height: auto;
+    margin-top: 0;
+    padding: 0.4rem;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 0.63rem;
+  }
+
+  .info {
+    display: grid;
+  }
+
+  .frame {
+    position: relative;
+    width: auto;
+    height: 42vh;
+    right: 0;
+    margin: 6vh auto;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-height: 800px) {
+  .frame {
+    height: 34vh;
+    margin: 5vh auto;
+  }
 }
