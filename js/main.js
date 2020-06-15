@@ -15,5 +15,5 @@ function showSlides(n) {
       slides[i].style.display = "none";
   }
   
-  slides[slideIndex-1].style.display = "grid";
+//   slides[slideIndex-1].style.display = "grid";
 } 

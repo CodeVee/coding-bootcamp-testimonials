@@ -146,3 +146,42 @@ main#main {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 475px) {
+    main#main {
+        min-height: 97vh;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+      }
+      
+      #main > img {
+        position: absolute;
+      }
+      
+      #quotes {
+        top: 100vw;
+        left: 42.5vw;
+        width: 15vw;
+      }
+      
+      #pattern {
+        width: 96vw;
+        top: .2rem;
+        right: 2vw;
+      }
+      
+      #curve {
+        width: 70vw;
+      }
+      
+      .wrapper {
+        z-index: 1;
+        position: relative;
+        width: 29.93rem;
+        height: 12.3rem;
+        margin: 3.5rem auto;
+        display: none;
+        grid-template-columns: 1.95fr 1fr;
+      }
+}
