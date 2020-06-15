@@ -3,7 +3,7 @@
   --max-size: 1440px;
   --dark-blue: hsl(240, 38%, 20%);
   --grey-blue: hsl(240, 18%, 77%);
-  --light-color: hsl(0, 0, 100%);
+  --light-color: #ffffff;
 }
 
 * {
