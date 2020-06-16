@@ -24,6 +24,11 @@ button {
   cursor: pointer;
 }
 
+p {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
 .container {
   max-width: var(--max-size);
   margin: 0 auto;
@@ -72,11 +77,6 @@ main#main {
   position: relative;
   margin-top: 3.5rem;
   color: var(--dark-blue);
-}
-
-.text {
-  font-weight: 300;
-  margin-bottom: 0.5rem;
 }
 
 .info {
@@ -202,7 +202,7 @@ main#main {
     text-align: center;
   }
 
-  .text {
+  p {
     font-size: 0.63rem;
   }
 
