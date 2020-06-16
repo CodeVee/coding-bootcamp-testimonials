@@ -80,7 +80,7 @@ main#main {
 }
 
 .info {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
 }
 
 .fade {
@@ -96,6 +96,10 @@ main#main {
 
 .frame > img {
   height: 100%;
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 3px 6px 10px -4px rgba(51, 51, 51, 1);
+  -moz-box-shadow: 3px 6px 10px -4px rgba(51, 51, 51, 1);
+  box-shadow: 3px 6px 10px -4px rgba(51, 51, 51, 1);
 }
 
 .toggle {
@@ -204,6 +208,7 @@ main#main {
 
   .info {
     display: grid;
+    font-size: 0.5rem;
   }
 
   .frame {
