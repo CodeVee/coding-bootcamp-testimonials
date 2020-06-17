@@ -16,4 +16,12 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "grid";
-} 
+}
+
+document.addEventListener('keydown', function (e) {
+  if (e.code === 'ArrowLeft')
+      plusSlides(-1);
+
+  if (e.code === 'ArrowRight')
+      plusSlides(1);
+});
