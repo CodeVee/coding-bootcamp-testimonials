@@ -1,0 +1,16 @@
+@import '_config';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $font-size;
+}
+
+.page {
+    font-family: $font-family;
+}
