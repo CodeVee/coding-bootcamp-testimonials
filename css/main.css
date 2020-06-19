@@ -43,9 +43,47 @@ html {
   width: 70%;
   height: 60%;
   margin-top: 14.5%;
+  position: relative;
 }
 .picture__dp-img {
   width: 100%;
+  -webkit-box-shadow: 3px 6px 10px -4px #333333;
+  -moz-box-shadow: 3px 6px 10px -4px #333333;
+  box-shadow: 3px 6px 10px -4px #333333;
+}
+
+.toggle {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 28%;
+  height: 15%;
+  padding: 0 1rem;
+  border-radius: 3rem;
+  top: 104%;
+  left: 35%;
+  -webkit-box-shadow: 3px 6px 10px -4px #333333;
+  -moz-box-shadow: 3px 6px 10px -4px #333333;
+  box-shadow: 3px 6px 10px -4px #333333;
+}
+.toggle__btn {
+  border: none;
+  background-color: transparent;
+  height: 40%;
+  cursor: pointer;
+}
+.toggle__btn:active {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.toggle__btn:focus {
+  outline: none;
+}
+.toggle__image {
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
