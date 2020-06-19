@@ -11,5 +11,41 @@ html {
 .page {
   font-family: "Inter", sans-serif;
 }
+.page__inner {
+  min-height: 100vh;
+  position: relative;
+}
+.page__image {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+}
+
+.card {
+  height: 88vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.picture__bg-img {
+  width: 90%;
+  position: absolute;
+  top: 6%;
+  right: 5%;
+  z-index: -1;
+}
+.picture__inner {
+  width: 70%;
+  height: 60%;
+  margin-top: 14.5%;
+}
+.picture__dp-img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
@@ -14,7 +14,20 @@
 </head>
 <body class="page">
   <div class="page__inner">
-    <img src="./images/pattern-curve.svg" id="curve">
+    <img src="./images/pattern-curve.svg" class="page__image">
+    <div class="card">
+      <div class="picture">
+        <div class="picture__inner">
+          <img src="./images/image-tanya.jpg" class="picture__dp-img" alt="Tanya">
+        </div>
+        <img src="./images/pattern-bg.svg" class="picture__bg-img">
+        <div class="toggle">
+          <button class="toggle__left-btn" onclick="plusSlides(-1)"><img src="./images/icon-prev.svg" alt="left toggle"></button>
+          <button class="toggle__right-btn" onclick="plusSlides(1)"><img src="./images/icon-next.svg" alt="right toggle"></button>
+        </div>
+      </div>
+      <div class="text"></div>
+    </div>
   </div>
 
   <!-- <div class="container">
