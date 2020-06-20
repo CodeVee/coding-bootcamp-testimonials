@@ -45,6 +45,11 @@ html {
   margin-top: 14.5%;
   position: relative;
 }
+@media (max-width: 767px) and (min-height: 750px) {
+  .picture__inner {
+    margin-top: 16%;
+  }
+}
 .picture__dp-img {
   width: 100%;
   -webkit-box-shadow: 3px 6px 10px -4px #333333;
@@ -67,6 +72,11 @@ html {
   -webkit-box-shadow: 3px 6px 10px -4px #333333;
   -moz-box-shadow: 3px 6px 10px -4px #333333;
   box-shadow: 3px 6px 10px -4px #333333;
+}
+@media (max-width: 767px) and (min-height: 750px) {
+  .toggle {
+    top: 85%;
+  }
 }
 .toggle__btn {
   border: none;
