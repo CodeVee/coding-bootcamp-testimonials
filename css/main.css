@@ -96,4 +96,32 @@ html {
   height: 100%;
 }
 
+.text {
+  padding: 0 8.5333333333vw;
+  text-align: center;
+  position: relative;
+  color: #202046;
+}
+.text__quote {
+  font-size: 4.7733333333vw;
+  font-weight: 300;
+}
+.text__info {
+  display: grid;
+  font-size: 3.7333333333vw;
+  margin-top: 2rem;
+}
+.text__info--bold {
+  font-weight: 700;
+}
+.text__info--grey {
+  color: #babacf;
+}
+.text__image {
+  position: absolute;
+  width: 15%;
+  top: -8vw;
+  left: 42.5vw;
+}
+
 /*# sourceMappingURL=main.css.map */

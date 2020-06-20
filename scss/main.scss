@@ -99,3 +99,36 @@ html {
     height: 100%;
   }
 }
+
+.text {
+    padding: 0 calculate(32px);
+    text-align: center;
+    position: relative;
+    color: $dark-blue;
+    
+    &__quote {
+        font-size: calculate(17.9px);
+        font-weight: 300;
+    }
+
+    &__info {
+        display: grid;
+        font-size: calculate(14px);
+        margin-top: 2rem;
+
+        &--bold {
+            font-weight: 700;
+        }
+
+        &--grey {
+            color: $grey-blue;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        width: 15%;
+        top: -8vw;
+        left: 42.5vw;
+    }
+}

@@ -9,3 +9,8 @@
   -ms-transform: $property;
   transform: $property;
 }
+
+@function calculate($value) {
+    $result: $value / 375px * 100vw;
+    @return $result;
+}
