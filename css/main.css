@@ -135,19 +135,19 @@ html {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  width: 28%;
-  height: 15%;
-  padding: 0 1rem;
+  width: 22%;
+  height: 6%;
+  padding: 0 4vw;
   border-radius: 3rem;
-  top: 104%;
-  left: 35%;
+  top: 44%;
+  left: 39%;
   -webkit-box-shadow: 3px 6px 10px -4px #333333;
   -moz-box-shadow: 3px 6px 10px -4px #333333;
   box-shadow: 3px 6px 10px -4px #333333;
 }
 @media (max-width: 767px) and (min-height: 750px) {
   .toggle {
-    top: 85%;
+    top: 37%;
   }
 }
 @media (min-width: 1025px) {
@@ -163,7 +163,7 @@ html {
 .toggle__btn {
   border: none;
   background-color: transparent;
-  height: 40%;
+  height: 38%;
   cursor: pointer;
 }
 .toggle__btn:active {
