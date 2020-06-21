@@ -45,6 +45,10 @@ html {
   display: grid;
   grid-template-rows: 2fr 1fr;
 
+  &--fade-in {
+      @include animation(2s);
+  }
+
   @include media($lg) {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
@@ -53,6 +57,24 @@ html {
     margin: 0;
   }
 }
+
+@-webkit-keyframes slide {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .picture {
   position: relative;

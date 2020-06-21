@@ -10,7 +10,14 @@
   transform: $property;
 }
 
+@mixin animation($duration) {
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: $duration;
+  animation-name: slide;
+  animation-duration: $duration;
+}
+
 @function calculate($value) {
-    $result: $value / 375px * 100vw;
-    @return $result;
+  $result: $value / 375px * 100vw;
+  @return $result;
 }
