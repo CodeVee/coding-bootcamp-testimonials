@@ -22,7 +22,6 @@ html {
     @include media($lg) {
       max-width: $max-size;
       margin: 0 auto;
-      // min-height: 80rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -128,8 +127,8 @@ html {
   @include media($lg) {
     height: 6rem;
     width: 12.7rem;
-    top: 94%;
-    left: 5.5rem;
+    top: 73%;
+    left: 54%;
     border-radius: 5rem;
     padding: 0 2rem;
   }
