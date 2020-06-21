@@ -18,12 +18,26 @@ html {
   &__inner {
     min-height: 100vh;
     position: relative;
+
+    @include media($lg) {
+      max-width: $max-size;
+      margin: 0 auto;
+      // min-height: 80rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__image {
     position: absolute;
     bottom: 0;
     width: 80%;
+
+    @include media($lg) {
+      width: 40%;
+      left: 0;
+    }
   }
 }
 
@@ -31,6 +45,14 @@ html {
   height: 88vh;
   display: grid;
   grid-template-rows: 2fr 1fr;
+
+  @include media($lg) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 66rem;
+    width: 80%;
+    margin: 0;
+  }
 }
 
 .picture {
@@ -38,12 +60,22 @@ html {
   display: flex;
   justify-content: center;
 
+  @include media($lg) {
+    order: 1;
+  }
+
   &__bg-img {
     width: 90%;
     position: absolute;
     top: 6%;
     right: 5%;
     z-index: -1;
+
+    @include media($lg) {
+      width: auto;
+      top: -7%;
+      right: -9%;
+    }
   }
 
   &__inner {
@@ -53,13 +85,25 @@ html {
     position: relative;
 
     @include media($xs-max...) {
-        margin-top: 16%;
+      margin-top: 16%;
+    }
+
+    @include media($lg) {
+      width: 97%;
+      margin-top: 3%;
+      margin-left: -3rem;
+      height: 82%;
     }
   }
 
   &__dp-img {
     width: 100%;
+    border-radius: 1rem;
     @include box-shadow(3px 6px 10px -4px rgba(51, 51, 51, 1));
+
+    @include media($lg) {
+      height: 100%;
+    }
   }
 }
 
@@ -78,8 +122,18 @@ html {
   @include box-shadow(3px 6px 10px -4px rgba(51, 51, 51, 1));
 
   @include media($xs-max...) {
-      top: 85%;
+    top: 85%;
   }
+
+  @include media($lg) {
+    height: 6rem;
+    width: 12.7rem;
+    top: 94%;
+    left: 5.5rem;
+    border-radius: 5rem;
+    padding: 0 2rem;
+  }
+
   &__btn {
     border: none;
     background-color: transparent;
@@ -87,11 +141,11 @@ html {
     cursor: pointer;
 
     &:active {
-        @include transform(scale(0.7));
+      @include transform(scale(0.7));
     }
 
     &:focus {
-        outline: none;
+      outline: none;
     }
   }
 
@@ -101,34 +155,60 @@ html {
 }
 
 .text {
-    padding: 0 calculate(32px);
-    text-align: center;
-    position: relative;
-    color: $dark-blue;
-    
-    &__quote {
-        font-size: calculate(17.9px);
-        font-weight: 300;
+  padding: 0 calculate(32px);
+  text-align: center;
+  position: relative;
+  color: $dark-blue;
+
+  @include media($lg) {
+    align-self: center;
+    padding: 0;
+    text-align: start;
+  }
+
+  &__quote {
+    font-size: calculate(17.9px);
+    font-weight: 300;
+
+    @include media($lg) {
+      font-size: 3.2rem;
+      width: 110%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__info {
+    display: grid;
+    font-size: calculate(14px);
+    margin-top: 2rem;
+
+    @include media($lg) {
+      display: none;
+      display: inline-block;
+      font-size: 2.05rem;
+      margin-top: 5rem;
     }
 
-    &__info {
-        display: grid;
-        font-size: calculate(14px);
-        margin-top: 2rem;
-
-        &--bold {
-            font-weight: 700;
-        }
-
-        &--grey {
-            color: $grey-blue;
-        }
+    &--bold {
+      font-weight: 700;
     }
 
-    &__image {
-        position: absolute;
-        width: 15%;
-        top: -8vw;
-        left: 42.5vw;
+    &--grey {
+      color: $grey-blue;
     }
+  }
+
+  &__image {
+    position: absolute;
+    width: 15%;
+    top: -8vw;
+    left: 42.5vw;
+
+    @include media($lg) {
+      top: -6.5rem;
+      left: 9.5rem;
+      width: 11.5rem;
+    }
+  }
 }
