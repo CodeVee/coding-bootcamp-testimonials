@@ -51,9 +51,14 @@ html {
   .card {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    height: 66rem;
+    height: 58rem;
     width: 80%;
     margin: 0;
+  }
+}
+@media (min-width: 1401px) {
+  .card {
+    height: 66rem;
   }
 }
 
@@ -92,9 +97,14 @@ html {
 }
 @media (min-width: 1025px) {
   .picture__bg-img {
-    width: auto;
+    width: 63rem;
     top: -7%;
     right: -9%;
+  }
+}
+@media (min-width: 1401px) {
+  .picture__bg-img {
+    width: auto;
   }
 }
 .picture__inner {
@@ -152,11 +162,18 @@ html {
 }
 @media (min-width: 1025px) {
   .toggle {
-    height: 6rem;
-    width: 12.7rem;
-    top: 73%;
+    height: 5.33rem;
+    width: 11.29rem;
+    top: 72%;
     left: 54%;
     border-radius: 5rem;
+    padding: 0 1.8rem;
+  }
+}
+@media (min-width: 1401px) {
+  .toggle {
+    height: 6rem;
+    width: 12.7rem;
     padding: 0 2rem;
   }
 }
@@ -197,10 +214,15 @@ html {
 }
 @media (min-width: 1025px) {
   .text__quote {
-    font-size: 3.2rem;
-    width: 110%;
+    font-size: 2.84rem;
+    width: 109%;
     position: relative;
     z-index: 1;
+  }
+}
+@media (min-width: 1401px) {
+  .text__quote {
+    font-size: 3.2rem;
   }
 }
 .text__info {
@@ -212,8 +234,13 @@ html {
   .text__info {
     display: none;
     display: inline-block;
-    font-size: 2.05rem;
+    font-size: 1.82rem;
     margin-top: 5rem;
+  }
+}
+@media (min-width: 1401px) {
+  .text__info {
+    font-size: 2.05rem;
   }
 }
 .text__info--bold {
@@ -229,6 +256,13 @@ html {
   left: 42.5vw;
 }
 @media (min-width: 1025px) {
+  .text__image {
+    top: -5.7rem;
+    left: 8.44rem;
+    width: 10.22rem;
+  }
+}
+@media (min-width: 1401px) {
   .text__image {
     top: -6.5rem;
     left: 9.5rem;
